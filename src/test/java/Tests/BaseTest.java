@@ -16,7 +16,7 @@ public class BaseTest extends DriverFactory{
     @Parameters("browser")
     @BeforeMethod
     public void setDriver(@Optional("Chrome") String browser){
-        new DriverFactory().setUpDriver("http://automationpractice.com/index.php", "Firefox");
+        new DriverFactory().setUpDriver("http://automationpractice.com/index.php", browser);
     }
     @AfterMethod
     public void tearDown() {
