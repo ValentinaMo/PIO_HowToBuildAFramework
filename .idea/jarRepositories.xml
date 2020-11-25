@@ -16,5 +16,10 @@
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="endavaNexus" />
+      <option name="name" value="Endava Accelerator Repository" />
+      <option name="url" value="https://accelerators-repo.endava.com/repository/InTest" />
+    </remote-repository>
   </component>
 </project>
