@@ -1,19 +1,22 @@
 package Pages;
 
-import Utilities.Utils;
-import com.github.javafaker.Faker;
+import Utilities.Waiters;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage extends Utils {
-    Faker faker = new Faker();
+public class HomePage extends Waiters {
 
     @FindBy (xpath = "//*[@class=\"login\"]")
     private WebElement signInButton;
+    @FindBy (xpath = "//*[@class=\"account\"]//span")
+    private WebElement costumerName;
 
     public void clickOnSignInButton(){
-        clickOnWait(15, signInButton);
+        clickOnWait(signInButton);
     }
 
+    public String getCostumerName(){
+        return costumerName.getText();
+    }
 
 }

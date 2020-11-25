@@ -9,12 +9,5 @@
             </class>
         </classes>
     </test>
-    <test name="FirefoxTests" >
-        <parameter name="browser" value="Firefox"></parameter>
-        <classes>
-            <class name="Tests.SelectProductTest">
-            </class>
-        </classes>
-    </test>
 
 </suite>
