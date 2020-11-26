@@ -63,6 +63,6 @@ public class CreateAnAccountPage extends Waiters {
     }
 
     public String getCostumerNameCreatingAccount(){
-        return customerName + " " +customerLastName;
+        return customerName;
     }
 }
